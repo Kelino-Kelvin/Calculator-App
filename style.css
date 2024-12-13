@@ -142,6 +142,9 @@ body{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media screen and (max-width:460px) {
+    .wrapper{
+        width: 90vw;
+    }
     .btn{
         height: 60px;
     }
