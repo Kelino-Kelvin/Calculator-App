@@ -1,0 +1,68 @@
+:root{
+    --bgColor: hsl(0, 0%, 90%);
+    --keypadBgColor: hsl(0, 5%, 81%);
+    --panelBgColor: hsl(0, 0%, 93%);
+
+    --specialKeyBgColor: hsl(185, 42%, 37%);
+    --specialKeyHover: hsl(185, 42%, 50%);
+    --specialKeyBgShadow: hsl(185, 58%, 25%);
+
+    --equalsBtnColor: hsl(25, 98%, 40%);
+    --equalsBtnHover: hsl(25, 98%, 55%);
+    --equalsBtnShadow: hsl(25, 99%, 27%);
+
+    --btnColor: hsl(45, 7%, 89%);
+    --btnHover: hsl(60, 4%, 95%);
+    --btnShadow: hsl(35, 11%, 61%);
+
+    --textColor: hsl(60, 10%, 19%);
+    --panelTextColor: hsl(60, 10%, 19%);
+}
+
+
+body{
+    background-color: var(--bgColor);
+}
+.top{
+    color: var(--panelTextColor);
+}
+.wrapper .output{
+    background-color: var(--panelBgColor);
+    color: var(--panelTextColor);
+}
+.wrapper .keypad, .switch button{
+    background-color: var(--keypadBgColor);
+}
+.keypad .btn{
+    background-color: var(--btnColor);
+    color: var(--textColor);
+    border-bottom: 2px solid var(--btnShadow);
+}
+.keypad .btn:active{
+    background-color: var(--btnHover);
+}
+.keypad .del, .keypad .reset{
+    background-color: var(--specialKeyBgColor);
+    border-bottom: 2px solid var(--specialKeyBgShadow);
+}
+.keypad .del:active, .keypad .reset:active{
+    background-color: var(--specialKeyHover);
+}
+.keypad .equals{
+    background-color: var(--equalsBtnColor);
+    border-bottom: 2px solid var(--equalsBtnShadow);
+}
+.keypad .equals:active{
+    background-color: var(--equalsBtnHover);
+}
+.keypad .del, .keypad .reset, .keypad .equals{
+    color: hsl(0, 0%, 100%);
+}
+.theme-switch-section .ballpoint{
+    background-color: var(--equalsBtnColor);
+    bottom: 3px;
+    left: 29px;
+}
+
+.attribution{color: var(--panelTextColor);}
+.attribution a{color: var(--equalsBtnColor);}

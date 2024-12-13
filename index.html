@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" id="switcher-id" href="">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="top">
+      <h3 class="logo">calc</h3>
+
+      <div class="themes">
+        <div class="text">theme</div>
+
+        <div class="theme-switch-section">
+          <div class="switch">
+            <div class="ident">1</div>
+            <button data-theme="blue" class="btn-1 switchBtn" id="switcher-1"></button>
+          </div>
+
+          <div class="switch">
+            <div class="ident">2</div>
+            <button data-theme="light" class="btn-2 switchBtn" id="switcher-2"></button>
+          </div>
+
+          <div class="switch">
+            <div class="ident">3</div>
+            <button data-theme="purple" class="btn-3 switchBtn" id="switcher-3"></button>
+          </div>
+
+          <div class="ballpoint"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="output" id="output"></div>
+    <div class="keypad">
+      
+      <button class="btn" onclick="input(7)">7</button>
+      <button class="btn" onclick="input(8)">8</button>
+      <button class="btn" onclick="input(9)">9</button>
+      <button class="btn del" onclick="del()">DEL</button>
+
+      <button class="btn" onclick="input(4)">4</button>
+      <button class="btn" onclick="input(5)">5</button>
+      <button class="btn" onclick="input(6)">6</button>
+      <button class="btn" onclick="input('+')">+</button>
+
+      <button class="btn" onclick="input(1)">1</button>
+      <button class="btn" onclick="input(2)">2</button>
+      <button class="btn" onclick="input(3)">3</button>
+      <button class="btn" onclick="input('-')">-</button>
+
+      <button class="btn" onclick="input('.')">.</button>
+      <button class="btn" onclick="input(0)">0</button>
+      <button class="btn" onclick="input('/')">/</button>
+      <button class="btn" onclick="input('*')">*</button>
+
+      <button class="btn reset" onclick="reset()">RESET</button>
+      <button class="btn equals" onclick="evalThis()">=</button>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/kelino-kelvin">Kelino Kelvin</a>.
+  </div>
+
+  <script src="./script.js"></script>
+  <script src="themeSwitcher.js"></script>
+</body>
+</html>
